@@ -1,0 +1,9 @@
+<hello name="{{ name | titleCase}}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<input type="text" id="firstName" name="name" 
+[ngModel]="name | titleCase" 
+(ngModelChange)="name=$event" 
+#firstName="ngModel">
